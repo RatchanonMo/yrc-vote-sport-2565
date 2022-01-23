@@ -1,0 +1,233 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-family: "Kanit", sans-serif;
+}
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+.signout:hover {
+  color: rgb(245, 52, 52) !important;
+}
+.card {
+  border: none;
+  background: none;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.card-text {
+  font-weight: 500;
+}
+.hvrbox,
+.hvrbox * {
+  box-sizing: border-box;
+}
+.hvrbox {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.hvrbox img {
+  max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+  display: block;
+}
+.hvrbox .hvrbox-layer_top {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff !important;
+  -moz-transition: all 0.1s ease-in-out 0s;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  -ms-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+  opacity: 1;
+}
+.hvrbox:focus .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+  opacity: 1;
+}
+.hvrbox .hvrbox-text {
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+  font-size: 15px;
+  border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+  border-top: 1px solid rgba(179, 179, 179, 0.7);
+  margin-top: 5px;
+  padding-top: 2px;
+  display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+  display: block;
+}
+.rank {
+  background: white;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #11142d;
+  border-radius: 10px;
+  transition: 0.1s;
+}
+
+.header__input:focus {
+  outline: none;
+}
+.header__btn-search {
+  color: #aeb0c2;
+  transition: 0.2s;
+}
+.header__btn-search:hover {
+  color: #c02c8e;
+}
+.page__wrapper {
+  /* The image used */
+  background-image: url('../img/background10.jpg');
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  background-color: #d91b5c;
+  color: white;
+  cursor: pointer;
+  border-radius: 40000px;
+}
+.index {
+  background-image: url("../img/background10.jpg");
+  background-size: cover;
+}
+
+.box {
+	transition: 0.3s ;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border-radius: 20px;
+	margin-top: 20px;
+	padding-bottom:20px;
+  
+
+  background: white;
+
+}
+
+
+
+.table-scrollable {
+  overflow-x: auto;
+}
+.vote_title{
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+
+}
+.vote_button{
+  display:inline-block;
+  padding: 0.35em 1.2em;
+  border:0.1em solid #c02c8e;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  transition: all 0.2s;
+
+}
+
+.vote_button:hover{
+  color:#fff;
+  background-color: #c02c8e;
+}
+
+.voted_button{
+  display:inline-block;
+  padding: 0.35em 1.2em;
+  border:0.1em solid #c02c8e;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  transition: all 0.2s;
+
+}
+
+.voted_button:hover{
+  color:#fff;
+
+}
+
+.login_button{
+  display:inline-block;
+  padding: 0.35em 1.2em;
+  border:0.1em solid #d91b5c;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  background-color: #d91b5c;
+  color: white;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.candidate_img{
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+.btn-light, .btn-light:hover, .btn-light:active, .btn-light:visited {
+  background-color: #7952b3 !important;
+  border-color: #7952b3 !important;
+  color:white !important;
+}
+
+
+.result{
+  /* The image used */
+  
+}
