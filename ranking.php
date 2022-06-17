@@ -28,15 +28,16 @@ if (!isset($_SESSION['s_username'])) {
     <div class="page">
         <div class="page__wrapper">
             <?php include('./component/header.php') ?>
-            <div style="margin: 80px 60px 0px 60px">
-                <h1 style="font-weight:700;color:white" align="left">คะแนนสูงสุดแต่ละคณะสี</h1>
+            <div class="container-fluid">
+            <div class="content">
+                <h1 style="font-weight:700;" align="left">คะแนนสูงสุดแต่ละคณะสี</h1>
                 <div class="row">
                     <?php
                     for ($i = 1; $i <= 5; $i++) {
 
                     ?>
                         <div class="col-xl-4 col-md-6">
-                            <div class="box">
+                            <div class="box" style="background-color: #eff1f7;">
                                 <div style="background:
                                 <?php
                                 if ($i == '1') {
@@ -70,7 +71,7 @@ if (!isset($_SESSION['s_username'])) {
                                     <hr>
                                 </div>
                                 <div class="container">
-                                    <div class="row">
+                                    <div class="row" >
                                         <?php
                                         $sql = "SELECT * FROM candidate WHERE c_color = '$i' ORDER BY c_point DESC";
                                         $query = mysqli_query($conn, $sql);
@@ -83,7 +84,7 @@ if (!isset($_SESSION['s_username'])) {
                                                 if($j == 1){
                                             ?>
                                            
-                                                <img src="./img/<?php echo $i . "-" . $row['c_number'] ?>.png" style="border-radius:10px" class="img-fluid" alt="">
+                                                <img src="./img/<?php echo $i . "-" . $row['c_number'] ?>.jpg" style="border-radius:20px" class="img-fluid"  alt="">
 
                                                 <?php }else{} ?>
                                        
@@ -95,6 +96,7 @@ if (!isset($_SESSION['s_username'])) {
                     <?php } ?>
                 </div>
             </div>
+        </div>
         </div>
         <?php include('./component/linkjs.php') ?>
 

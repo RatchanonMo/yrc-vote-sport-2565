@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $m4 = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($m4) == 1) {
-        $row4 = mysqli_fetch_array($m4);
+        $row4 = mysqli_fetch_array($m4);        
 
         $_SESSION['s_id'] = $row4['s_id'];
         $_SESSION['s_title'] = $row4['s_title'];

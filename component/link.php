@@ -1,8 +1,8 @@
-<title>ระบบโหวตประธานระดับชั้นมัธยมศึกษาปีที่ 1</title>
+<title>ระบบโหวตประธานคณะสี ปีการศึกษา 2565</title>
 <link rel="icon" href="./img/yrc_logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;700&display=swap" rel="stylesheet">
 <link href="./assets/bootstrap.min.css" rel="stylesheet" >
 <link rel="stylesheet" href="./assets/sweetalert2.min.css"  />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />

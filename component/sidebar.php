@@ -1,10 +1,7 @@
-<div class="sidebar" style="background: rgba( 0, 0, 0, 0.3 );
-backdrop-filter: blur( 12px );
--webkit-backdrop-filter: blur( 12px );
-">
+<div class="sidebar" style="">
     <div class="sidebar__top">
         <a class="sidebar__logo">
-            <img class="sidebar__pic" src="img/logo5.svg" alt="" />
+            <img class="sidebar__pic" src="img/logo6.svg" alt="" />
         </a>
         <button class="sidebar__burger"></button>
         <button class="sidebar__close" style="background:none;font-size:x-large;color:#aeb0c2">
@@ -31,7 +28,7 @@ backdrop-filter: blur( 12px );
                     ?>
                         <a class="sidebar__item 
                         <?php
-                        if ($_SERVER['PHP_SELF'] == "/yrc-vote-sport2565/manage_candidate.php") {
+                        if ($_SERVER['PHP_SELF'] == "/yrc-e-vote-sport-2565/manage_candidate.php") {
                             echo "active";
                         } else {
                             echo "";
@@ -60,7 +57,7 @@ backdrop-filter: blur( 12px );
                     <?php } else { ?>
                         <a class="sidebar__item 
                         <?php
-                        if ($_SERVER['PHP_SELF'] == "/yrc-vote-sport2565/vote.php") {
+                        if ($_SERVER['PHP_SELF'] == "/yrc-e-vote-sport-2565/vote.php") {
                             echo "active";
                         } else {
                             echo "";

@@ -17,11 +17,7 @@ include('./connect/connect.php');
 
 </head>
 
-<body style="background-image: url('./img/background10.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;">
+<body >
     <div class="page">
         <div class="container-fluid result" style="max-width: 1000px;">
             <div style="margin:80px 0px">
@@ -29,13 +25,13 @@ include('./connect/connect.php');
                 <img src="./img/yrc_logo.png" class="img-fluid" width="10%" alt="">
             </p>
           
-                <h1 style="font-weight:700;color:white" class="mt-2" align="center">ภาพรวมการเลือกตั้งประธานคณะสี</h1>
+                <h1 style="font-weight:700;" class="mt-2" align="center">ภาพรวมการเลือกตั้งประธานคณะสี</h1>
                 <hr>
                 
                 <div class="col-xl-12">
                     <div class="box">
                         <div style="background:#d91b5c;border-radius:20px 20px 0px 0px">
-                            <h5 class="p-3" style="color: white" align="center">ปีการศึกษา 2564</h5>
+                            <h5 class="p-3" style="color: white" align="center">ปีการศึกษา 2565</h5>
                         </div>
                         <div class="container-fluid pt-4" style="max-width: 900px">
                             <h5><i class="fas fa-clipboard-list" style="color:#d91b5c"></i>&nbsp;
@@ -123,6 +119,8 @@ include('./connect/connect.php');
                         </script>
                         <div id="chart_div" class=""></div>
                         <?php 
+                        date_default_timezone_set('Asia/Bangkok');
+                        
                               $date =  date("d/m/Y");
                               $time = date("H.i");
                         ?>

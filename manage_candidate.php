@@ -26,12 +26,14 @@ if (!isset($_SESSION['s_username'])) {
     <div class="page">
         <div class="page__wrapper">
             <?php include('./component/header.php') ?>
-            <div style="margin: 80px 60px 60px 60px">
-                <h1 style="font-weight:700;color:white" align="left">ระบบจัดการผู้ลงสมัคร</h1>
+
+        <div class="container-fluid">
+            <div class="content" >
+                <h1 style="font-weight:700" class="Kanit" align="left">ระบบจัดการผู้ลงสมัคร</h1>
                 <a data-bs-toggle="modal" data-bs-target="#reset" class="btn btn-danger mt-4"><i class="fas fa-trash"></i> รีเซ็ตผลคะแนน</a>
                 <div style="background: white;border-radius:10px;margin-top:30px;padding: 10px 30px 30px 30px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
                     <div class="table-scrollable">
-                        <table class="table table-responsive pb-2 " id="example">
+                        <table class="table table-border table-responsive pb-2 " id="example">
                             <thead>
                                 <tr>
                                     <th style="display:none" scope="col">id</th>
@@ -87,12 +89,12 @@ if (!isset($_SESSION['s_username'])) {
                                             <?php echo $cand['c_point'] ?>
                                         </td>
                                         <td>
-                                            <a style="font-family:'Kanit'" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edit<?php echo $cand['c_id'] ?>"><i class="fas fa-pencil"></i> แก้ไข</a>
+                                            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edit<?php echo $cand['c_id'] ?>"><i class="fas fa-pencil"></i> แก้ไข</a>
 
                                         </td>
                                         <td>
 
-                                            <a style="font-family:'Kanit'" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete<?php echo $cand['c_id'] ?>"><i class="fas fa-trash"></i> ลบ</a>
+                                            <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete<?php echo $cand['c_id'] ?>"><i class="fas fa-trash"></i> ลบ</a>
 
                                         </td>
                                     </tr>
@@ -110,11 +112,11 @@ if (!isset($_SESSION['s_username'])) {
                                                     <form action="./process/edit_candidate.php" method="post">
                                                         <input name="c_id" type="text" value="<?php echo $cand['c_id'] ?>" hidden>
                                                         <h5 class="mt-3">คำนำหน้า</h5>
-                                                        <input class="form-control form-control-lg" style="font-family:'Kanit'" name="c_title" type="text" value="<?php echo $cand['c_title'] ?>" required>
+                                                        <input class="form-control form-control-lg" style="font-family:'IBM Plex Sans Thai'" name="c_title" type="text" value="<?php echo $cand['c_title'] ?>" required>
                                                         <h5 class="mt-3">ชื่อ</h5>
-                                                        <input class="form-control form-control-lg" style="font-family:'Kanit'" name="c_name" type="text" value="<?php echo $cand['c_name'] ?>" required>
+                                                        <input class="form-control form-control-lg" style="font-family:'IBM Plex Sans Thai'" name="c_name" type="text" value="<?php echo $cand['c_name'] ?>" required>
                                                         <h5 class="mt-3">สกุล</h5>
-                                                        <input class="form-control form-control-lg" style="font-family:'Kanit'" name="c_surname" type="text" value="<?php echo $cand['c_surname'] ?>" required>
+                                                        <input class="form-control form-control-lg" style="font-family:'IBM Plex Sans Thai'" name="c_surname" type="text" value="<?php echo $cand['c_surname'] ?>" required>
                                                         <div class="row">
                                                             <div class="col-6">
                                                                 <h5 class="mt-3">ระดับชั้น</h5>
@@ -171,6 +173,9 @@ if (!isset($_SESSION['s_username'])) {
                 </div>
             </div>
         </div>
+        </div>
+
+
     </div>
 
     <div class=" modal fade" id="reset" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
